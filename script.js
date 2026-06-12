@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Seleciona o botão Saiba Mais
     const saibaMaisBtn = document.getElementById("saibaMaisBtn");
+    
     saibaMaisBtn.addEventListener("click", () => {
     modal.style.display = "flex";
 });
