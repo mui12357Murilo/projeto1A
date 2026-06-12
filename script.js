@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Seleciona o botão Saiba Mais
-    const saibaMaisBtn = document.querySelector('a[href="#cidade"]');
+    const saibaMaisBtn = document.getElementById("saibaMaisBtn");
+    saibaMaisBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
 
     // Criação do modal
     const modal = document.createElement("div");
