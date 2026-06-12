@@ -1,1 +1,56 @@
+/* style.css */
 
+/* Importando a fonte Odin Rounded do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Odin+Rounded&display=swap');
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Odin Rounded', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Container principal com gradiente dividido ao meio */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Lado azul */
+.left {
+    flex: 1;
+    background: linear-gradient(to bottom, #a0e9ff, #66d6ff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+/* Lado verde */
+.right {
+    flex: 1;
+    background: linear-gradient(to bottom, #b6fbc3, #7ce57f);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+/* Efeito hover para aumentar o texto suavemente */
+.left:hover,
+.right:hover {
+    font-size: 20px; /* aumenta suavemente */
+}
