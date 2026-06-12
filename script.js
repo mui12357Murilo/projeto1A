@@ -7,6 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "flex";
 });
 
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const botao = document.querySelector(".hero-bg a");
+
+    botao.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        alert(
+            "Cidade e campo dependem um do outro!\n\nClique nos menus para explorar mais informações."
+        );
+    });
+
+});
+
     // Criação do modal
     const modal = document.createElement("div");
     modal.id = "modalInfo";
