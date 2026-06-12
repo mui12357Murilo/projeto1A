@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por que a cidade precisa do campo, e por que o campo precisa da cidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f2e9 100%);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
 
+    <!-- HEADER -->
+    <header class="bg-emerald-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-leaf text-3xl"></i>
+                <h1 class="text-2xl font-bold tracking-tight">Cidade & Campo</h1>
+            </div>
+            <nav class="hidden md:flex gap-8 text-lg">
+                <a href="#cidade" class="hover:text-emerald-300 transition-colors">A Cidade Precisa do Campo</a>
+                <a href="#campo" class="hover:text-emerald-300 transition-colors">O Campo Precisa da Cidade</a>
+                <a href="#conexao" class="hover:text-emerald-300 transition-colors">A Conexão</a>
+            </nav>
+            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })" 
+                    class="bg-white text-emerald-800 px-6 py-2.5 rounded-full font-semibold hover:bg-emerald-100 transition-all">
+                Entre em Contato
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                Por que a cidade precisa do campo,<br>
+                <span class="text-emerald-300">e por que o campo precisa da cidade</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90">
+                Uma reflexão sobre a interdependência essencial entre o urbano e o rural
+            </p>
+            <a href="#cidade" 
+               class="inline-block bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-2xl text-lg font-semibold transition-all">
+                Saiba mais
+            </a>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-4xl"></i>
+        </div>
+    </section>
+
+    <!-- CIDADE PRECISA DO CAMPO -->
+    <section id="cidade" class="section-bg py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-emerald-600 font-semibold tracking-widest">PARTE 1</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-8 leading-tight">
+                        Por que a <span class="text-emerald-700">cidade precisa do campo</span>
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-utensils text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Alimentação</h3>
+                                <p class="text-zinc-600">O campo é responsável pela produção de alimentos que chegam todos os dias às mesas das cidades.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tree text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Recursos Naturais</h3>
+                                <p class="text-zinc-600">Água, madeira, fibras, energia renovável e matéria-prima vêm majoritariamente do campo.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-lungs text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Qualidade de Vida</h3>
+                                <p class="text-zinc-600">O campo regula o clima, preserva a biodiversidade e oferece espaços de lazer e saúde mental.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://picsum.photos/id/1016/800/900" alt="Campo fértil" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPO PRECISA DA CIDADE -->
+    <section id="campo" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://picsum.photos/id/1074/800/900" alt="Cidade vibrante" class="w-full h-full object-cover">
+                </div>
+                <div class="order-1 md:order-2">
+                    <span class="text-emerald-600 font-semibold tracking-widest">PARTE 2</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-8 leading-tight">
+                        Por que o <span class="text-emerald-700">campo precisa da cidade</span>
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-store text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Mercado e Consumo</h3>
+                                <p class="text-zinc-600">As cidades são o principal mercado para os produtos do campo.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tools text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Tecnologia e Infraestrutura</h3>
+                                <p class="text-zinc-600">A cidade oferece acesso a máquinas, insumos, educação, saúde e internet.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-handshake text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Políticas e Serviços</h3>
+                                <p class="text-zinc-600">Governo, crédito, transporte e serviços públicos são concentrados nas cidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONEXÃO -->
+    <section id="conexao" class="section-bg py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">A Conexão é o Futuro</h2>
+            <p class="text-xl text-zinc-600 mb-12">
+                A cidade e o campo não são opostos. São partes de um mesmo sistema. 
+                Quando um enfraquece, o outro também sofre. O equilíbrio entre eles é essencial para um desenvolvimento sustentável.
+            </p>
+            
+            <div class="bg-white rounded-3xl p-10 shadow-xl max-w-2xl mx-auto">
+                <p class="italic text-lg text-zinc-700">
+                    "Não existe cidade saudável sem um campo vivo, nem campo próspero sem uma cidade forte."
+                </p>
+                <div class="mt-6 text-emerald-700 font-semibold">- Reflexão sobre o Brasil Rural e Urbano</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="contato" class="bg-emerald-800 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Vamos construir essa ponte?</h2>
+            <p class="text-xl mb-10">Compartilhe sua visão, experiência ou sugestão sobre o tema.</p>
+            <button onclick="alert('Formulário de contato em desenvolvimento!')" 
+                    class="bg-white text-emerald-800 px-12 py-5 rounded-2xl text-xl font-semibold hover:scale-105 transition-all">
+                Entrar em Contato
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-900 text-zinc-400 py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <i class="fas fa-leaf text-emerald-500 text-2xl"></i>
+                <span class="text-white text-xl font-semibold">Cidade & Campo</span>
+            </div>
+            <p class="mb-8">Um site sobre a interdependência essencial entre o urbano e o rural</p>
+            <p class="text-sm">© 2026 - Feito com ❤️ para o Brasil</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script já incluído via CDN
+        console.log("%cSite carregado com sucesso! 🌱", "color: #10b981; font-weight: bold");
+    </script>
+</body>
+</html>
