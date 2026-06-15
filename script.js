@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Seleciona o botão Saiba Mais
-    <a href="#cidade"
-   class="inline-block bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-2xl text-lg font-semibold transition-all">
-   Saiba mais
-</a>
+    const saibaMaisBtn = document.querySelector('a[href="#cidade"]');
 
     // Criação do modal
     const modal = document.createElement("div");
